@@ -14,3 +14,9 @@ phases:
   build:
     commands:
       - make deploy
+      
+eb_codebuild_settings:
+  ComputeType: BUILD_GENERAL1_SMALL
+  TimeoutInMinutes: 60
+  Image: aws/codebuild/standard:2.0
+  
